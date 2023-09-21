@@ -73,8 +73,9 @@ class Program
 
             foreach (string file in files)
             {
-                //This gets the files from the directory and will count the characters in the text files
+                //This reads out the file name from where the directory list is coming from
                 Console.WriteLine($"File: {Path.GetFileName(file)}");
+                //This gets the files from the directory and will count the characters in the text files
                 Dictionary<char, int> charCounts = CountCharacters(file);
 
                 //This will write the character and the amount that are in the text files
